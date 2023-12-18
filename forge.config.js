@@ -30,4 +30,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: "@electron-forge/publisher-github",
+      config: {
+        repository: {
+          owner: "KANGYONGSU23",
+          name: "ElectronTest",
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
